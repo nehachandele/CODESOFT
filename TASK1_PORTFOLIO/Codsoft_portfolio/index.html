@@ -1,0 +1,989 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://unpkg.com/bs-brain@2.0.4/components/services/service-4/assets/css/service-4.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>Portfolio - Neha Chandele</title>
+    <style>
+body {
+    background-color: rgb(246, 246, 246);
+    margin: 0; /* Ensure there is no default margin on body */
+}
+.navbar-nav{
+  background-color: rgb(6, 23, 67);
+}
+.container {
+    width: 100%;
+    max-width: 1440px; /* Adjust this value based on your preference */
+    margin: 0 auto; /* Center the container */
+    padding: 0 15px; /* Consistent padding on left and right */
+}
+
+.nav #navbarNav {
+    justify-content: center;
+    
+}
+
+.nav #navbarNav .navbar-nav .nav-item {
+    margin-right: 70px;
+    font-size: 20px; /* Adjust this value to increase/decrease space */
+}
+
+.nav-item1 {
+    padding: 2px 10px;
+    background: rgb(76,193,229);
+    background: linear-gradient(90deg, rgba(76,193,229,1) 0%, rgba(89,103,219,1) 49%, rgba(45,11,166,1) 93%);
+    border-radius: 10px;
+    margin-left: 20%;
+   
+}
+nav{
+  height: 60px;
+ position: fixed;
+ margin-top: -10%;
+ background-color: rgb(6, 23, 67);
+}
+
+.nav-item1 a {
+    color: white;
+    text-transform: uppercase;
+}
+.header {
+
+  margin-top: 10%;
+}
+.header p {
+    color: white;
+    font-size: 22px;
+    font-family: monospace;
+}
+
+.header p {
+    font-size: 28px;
+    color: rgb(78, 4, 23);
+    font-family: monospace;
+}
+
+.header span {
+    font-size: 54px;
+    color: rgb(45, 3, 54);
+    font-weight: bold;
+    font-family: Algerian;
+}
+
+#navbarNav .nav-item .nav-link {
+    color: white;
+    font-weight: bolder;
+}
+
+.nav-link {
+    color: white;
+    font-weight: bolder;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   
+  
+}
+
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+    .card {
+        align-items: center;
+    }
+    .nav-item1 {
+    padding: 0px 10px;
+    background: rgb(76,193,229);
+
+    background: linear-gradient(90deg, rgba(76,193,229,1) 0%, rgba(89,103,219,1) 49%, rgba(45,11,166,1) 93%);
+    border-radius: 10px;
+    margin-left: 0%;
+   
+}
+
+
+
+
+.header img{
+width: 300px;
+  height: 150px;
+margin-right:   15%;
+margin-top: 15%;
+}
+.about-img{
+  margin-left: 30px;
+}
+.section2 .about-img1 img{
+  width: 100%;
+    margin-left: -1%;
+    margin-top: -12%;
+}
+.section3 .about-img1 img{
+  width: 100%;
+    margin-left: -1%;
+    margin-top: -12%;
+}
+
+}
+@media (max-width: 988px) {
+   
+    .nav-item1 {
+    padding: 0px 10px;
+    background: rgb(76,193,229);
+    background: linear-gradient(90deg, rgba(76,193,229,1) 0%, rgba(89,103,219,1) 49%, rgba(45,11,166,1) 93%);
+    border-radius: 10px;
+    margin-left: 0%;
+   
+}
+}
+
+.about h4 {
+    text-transform: uppercase;
+    color: rgb(21, 15, 15);
+}
+
+.card-main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 40px;
+    background-color: black;
+    padding-top: 20px;
+}
+
+.card-main .about {
+    margin-left: 30px;
+}
+
+.about p {
+    color: rgb(24, 19, 19);
+}
+
+@media (max-width: 991px) {
+    .about-text {
+        margin-top: 40px;
+        margin-bottom: 15px;
+    }
+}
+
+.about-text h3 {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0 0 10px;
+    color: rgb(8, 73, 90);
+}
+
+@media (max-width: 767px) {
+    .about-text h3 {
+        font-size: 35px;
+    }
+}
+
+.about-text h4 {
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 767px) {
+    .about-text h4 {
+        font-size: 18px;
+        color: rgb(40, 5, 5);
+    }
+}
+
+.about-text p {
+    font-size: 18px;
+    color: rgb(15, 3, 3);
+}
+
+.about-text p mark {
+    font-weight: 600;
+    color: #3a3973;
+}
+
+.about-text .btn-bar {
+    padding-top: 8px;
+}
+
+.about-text .btn-bar a {
+    min-width: 150px;
+    text-align: center;
+    margin-right: 10px;
+}
+
+.about-list {
+    padding-top: 10px;
+}
+
+.about-list .media {
+    padding: 5px 0;
+}
+
+.about-list label {
+    color: #3a3973;
+    font-weight: 600;
+    width: 88px;
+    margin: 0;
+    position: relative;
+}
+
+.about-list label:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 11px;
+    width: 1px;
+    height: 12px;
+    background: #3a3973;
+    -moz-transform: rotate(15deg);
+    -o-transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
+    margin: auto;
+    opacity: 0.5;
+}
+
+.about-list p {
+    margin: 0;
+    font-size: 15px;
+}
+
+.about-img {
+    box-shadow: 0 5px 14px 0 rgba(0, 0, 0, 0.06);
+    padding: 10px;
+    max-width: 300px;
+    height: 350px;
+    border: 6px solid rgb(8, 95, 135);
+}
+
+.about-img img {
+    width: 110%;
+    margin-left: -15%;
+    margin-top: -15%;
+    height: 110%;
+    padding: 0;
+}
+
+@media (max-width: 991px) {
+    .about-img {
+        margin-top: 30px;
+    }
+}
+
+.dark-color {
+    text-transform: uppercase;
+}
+
+.counter-section {
+    padding: 40px 20px;
+}
+
+.counter-section .count-data {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.counter-section .count {
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0 0 10px;
+}
+
+.counter-section p {
+    font-weight: 500;
+    margin: 0;
+    color: #fe4f6c;
+}
+
+.theme-color {
+    color: #fe4f6c;
+}
+
+.section {
+    padding: 100px 0;
+    position: relative;
+}
+
+.gray-bg {
+    background-color: #ebf4fa;
+}
+
+.px-btn.theme {
+    background: rgb(76,193,229);
+    background: linear-gradient(90deg, rgba(76,193,229,1) 0%, rgba(89,103,219,1) 49%, rgba(45,11,166,1) 93%);
+    color: #ffffff;
+    border: 2px solid linear-gradient(90deg, rgba(76,193,229,1) 0%, rgba(89,103,219,1) 49%, rgba(45,11,166,1) 93%);
+}
+
+.px-btn {
+    padding: 0 20px;
+    line-height: 42px;
+    border: 2px solid transparent;
+    position: relative;
+    display: inline-block;
+    background: none;
+    border: none;
+    -moz-transition: ease all 0.35s;
+    -o-transition: ease all 0.35s;
+    -webkit-transition: ease all 0.35s;
+    transition: ease all 0.35s;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.px-btn.theme-t {
+    background: transparent;
+    color: #ffffff;
+    border: 2px solid linear-gradient(90deg, rgba(76,193,229,1) 0%, rgba(89,103,219,1) 49%, rgba(45,11,166,1) 93%);
+}
+#about h2{
+  color: yellow;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.section2 .about-img1 {
+    box-shadow: 0 5px 14px 0 rgba(0, 0, 0, 0.06);
+    padding:0px 10px;
+    max-width: 450px;
+    height: 350px;
+    border: 6px solid rgb(8, 95, 135);
+    border-radius: 10px;
+
+}
+
+.section2 .about-img1 img {
+    width: 110%;
+    margin-left: -15%;
+    margin-top: -10%;
+    height: 110%;
+    padding: 0;
+    border-radius: 10px;
+}
+.section3 .about-img1 {
+  padding:0px 10px;
+    box-shadow: 0 5px 14px 0 rgba(0, 0, 0, 0.06);
+    padding: 10px;
+    max-width: 450px;
+    height: 350px;
+    border: 6px solid rgb(8, 95, 135);
+    border-radius: 10px;
+}
+
+.section3 .about-img1 img {
+    width: 110%;
+    margin-left: -15%;
+    margin-top: -10%;
+    height: 110%;
+    padding: 0;
+    border-radius: 10px;
+}
+.text-secondary ul li{
+    text-align:left ;
+}
+.tech-container {
+      display: grid;
+      grid-template-columns: 20% 20% 20% 20% 20%;
+      justify-content: center;
+      gap: 20px;
+     
+      padding: 10px auto;
+      margin: 1px 10%;
+      
+    }
+    @media (max-width: 768px) { /* For tablets and smaller screens */
+  .tech-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 480px) { /* For mobile phones */
+  .tech-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .nav{
+    display: grid;
+   grid-template-columns:auto auto ;
+   gap: 30px;
+  }
+  .navbar-nav {
+    background-color: rgb(6, 23, 67);
+    margin-top: -30px;
+    padding-left: 15px;
+}
+  .custom-toggler .navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=utf8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba%28255, 255, 255, 1%29" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E');
+}
+.header div{
+  margin-top: 35px;;
+}
+.nav-item1{
+  width: 100px;
+}
+.experience {
+ 
+ padding: 10px;
+
+
+
+}
+
+}
+    .tech-card {
+      width: 120px;
+      text-align: center;
+      color: white;
+    }
+    .tech-card img {
+      width: 50px;
+      height: 50px;
+    }
+    .progress-bar {
+      width: 100%;
+      background-color: #e0e0e0;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    .progress-bar div {
+      height: 10px;
+      background-color: #4caf50;
+      width: 0;
+    }
+    .header img{
+      border-radius: 50%;min-height:200px;min-width:200px;margin-left: 20%;box-shadow: 1px 1px 14px 7px rgb(6, 114, 215);
+    }
+    .service{
+      padding-bottom:30px ;
+    
+    }
+
+  
+.footer {
+  background-color: rgb(6, 23, 67);
+	padding-bottom: 10px;
+	padding-top: 10px;
+}
+
+.footer_menu ul {
+	list-style: none;
+	text-align: center;
+}
+.footer_menu ul li{display: inline-block;}
+.footer_menu ul li a {
+	color:#fff;
+	padding: 0 10px;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+}
+.footer_menu ul li a:hover{color:#554c86;}
+
+/*START FOOTER SOCIAL DESIGN*/
+.footer_profile{margin-bottom:40px;}
+.footer_profile ul{
+list-style: outside none none;
+margin: 0;
+padding: 0
+}
+.footer_profile ul li{
+display: inline-block;
+}
+@media only screen and (max-width:480px) { 
+.footer_profile ul li{margin:2px;}
+
+}
+.footer_profile ul li a img{width:60px;}
+
+.footer_profile ul li a {
+	background: #554c86;
+	width: 40px;
+	height: 40px;
+	display: block;
+	text-align: center;
+	margin-right: 5px;
+	border-radius: 50%;
+	line-height: 40px;
+	box-sizing: border-box;
+	text-decoration: none;
+	-webkit-transition: .3s;
+	transition: .3s;
+	color: #fff;
+}
+.footer_copyright {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    color: #fff;
+}
+
+.experience {
+  background:url(/mainbg.jpeg);
+           padding: 40px 100px;
+        
+           background-repeat: no-repeat;
+           background-size: cover;
+       
+        }
+        .experience h2 {
+            text-align: center;
+            color: rgb(75, 1, 85);
+        }
+        .experience h3{
+          color: rgb(217, 25, 140);
+        }
+        .experience .job-title {
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: rgb(13, 65, 5);
+        }
+        .experience ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            padding: 10px;
+            color: rgb(26, 22, 22);
+            font-size: 16px
+        }
+
+
+
+    </style>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+          var navLinks = document.querySelectorAll('.nav-link');
+          var navbarCollapse = document.getElementById('navbarNav');
+          
+          navLinks.forEach(function(navLink) {
+              navLink.addEventListener('click', function() {
+                  if (window.innerWidth < 992) { // Check if the screen size is less than lg breakpoint (992px)
+                      navbarCollapse.classList.remove('show');
+                  }
+              });
+          });
+      });
+  </script>
+  
+</head>
+<body>
+    <!--Nav Bar-->
+    <nav class="container-fluid navbar-expand-lg navbar-light nav" style="z-index: 1;">
+        <a class="navbar-brand" href="#" style="color: yellow;font-size: 32px;font-weight: bold;"></a>
+        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                </li>
+              
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#project">Projects</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#service">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#skills">Skills</a>
+            </li>
+                <li class="nav-item1">
+                    <a class="nav-link" href="#contact" style="color: white;">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--Nav bar ends--> 
+
+    <!--Header Section-->
+    <div class="container header " id="#home">
+        <div>
+            <p>Hello, My Name is </p>
+            <p><span style="color: orange;">Ms. Neha Chandele,</span> I'm a</p>
+            <span id="element"></span>
+        </div>
+
+        <img src="bg1.jpeg" alt="Developer Image" >
+    </div>
+
+    <section class="section about-section " id="about">
+        <div class="container">
+            <div class="row align-items-center justify-content-around flex-row-reverse">
+                  <div class="col-lg-6">
+                    <div class="about-text">
+                        <h3 class="dark-color">About ME</h3>
+                        <h4 class="theme-color">App Developer &amp; Web Developer</h4>
+
+                        <p>My name is <b>Neha Ajay Chandele</b>, and I hold a diploma in computer science, with specialized industrial training in Django full stack development. Over the course of my studies and career, I have developed a variety of applications, including a women safety app, a quiz app, and a to-do app for Android. Additionally, I've created a pet management system and a bakery management system using PHP, as well as a district-level election commission website and an event planning website called PlanPerfect using Django.</p>
+                        <p>My technical skills are diverse and include proficiency in <strong>HTML, CSS, Tailwind CSS, Bootstrap, and Figma,</strong> where I have honed my UI design capabilities. I have gained practical experience through an internship at Codesoft, where I worked as a web developer and app developer. Recently, I have also embarked on freelancing, focusing on creating and managing various projects.</p>
+                        <div class="btn-bar">
+                            <a class="px-btn theme" href="https://github.com/nehachandele">View Works</a>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center">
+                    <div class="about-img">
+                       <img src="pr3.jpeg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <h3 style="color: rgb(1, 67, 95);text-align: center;font-weight: bold;font-size: 32px;text-transform: uppercase;font-family: 'Monotype Corsiva';" id="project">Projects</h3>
+    <section class="about-section section3 " id="about" style=" margin: 7% 0%;">
+      <div class="container">
+          <div class="row align-items-center justify-content-around flex-row-reverse">
+            <div class="col-lg-5 text-center" >
+              <div class="about-img1" style="border: 7px solid rgb(20, 132, 163);">
+                  <img src="elect1.jpg" alt="">
+              </div>
+          </div>
+              <div class="col-lg-6">
+                  <div class="about-text">
+                      <h3 class="dark-color" style="color: rgb(20, 132, 163);"> District Level Election Commission Website</h3>
+                      <h4 class="theme-color"></h4>
+                     <p>The District Level Election Commission Website is a comprehensive platform designed to streamline election management at the district level. It features voter registration, candidate information, election schedules, and real-time results updates. The website ensures transparency and accessibility, providing detailed election-related information to the public. It also includes news broadcasting, event notifications to all logged-in users, a youth engagement section, and a complaint box. This website helps administrators such as MLAs or Aamdars stay connected with the civil populace, enhancing communication and engagement between officials and the community. Developed with a user-friendly interface, it facilitates easy navigation and engagement, enhancing the overall electoral process within the district.
+
+
+
+
+                     </p>
+                    
+                  </div>
+              </div>
+              
+          </div>
+      </div>
+  </section>
+  <section class="about-section section3 " id="about" style=" margin: 10% 0%;">
+    <div class="container">
+        <div class="row align-items-center justify-content-around flex-row-reverse">
+          <div class="col-lg-5 text-center">
+            <div class="about-img1" style="border: 7px solid rgb(255, 157, 0);">
+                <img src="safeheaven.jpeg" alt="">
+            </div>
+        </div>
+            <div class="col-lg-6">
+                <div class="about-text">
+                    <h3 class="dark-color" style="color: rgb(255, 157, 0);">Safe-Heaven : A Woment Safety Application</h3>
+                    <h4 class="theme-color"></h4>
+                    <p>The Women Safety App is an Android application designed to enhance personal safety for women. Built using Firebase, it offers real-time location tracking, emergency contacts alerts, and a quick SOS button. When activated, the app sends the user's location to pre-selected contacts, ensuring immediate assistance. The app also includes emergency voices such as police sirens and gun firing, along with voice recording capabilities to capture real-time audio evidence. Firebase integration ensures seamless data management, user authentication, and reliable performance, making the app a robust tool for women's safety.</p>
+                   
+                   
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+<section class="about-section section3 " id="about" style=" margin: 10% 0%;">
+  <div class="container">
+      <div class="row align-items-center justify-content-around flex-row-reverse">
+        <div class="col-lg-5 text-center">
+          <div class="about-img1" style="border: 7px solid rgb(147, 5, 97);">
+              <img src="e2.png" alt="">
+          </div>
+      </div>
+          <div class="col-lg-6">
+              <div class="about-text">
+                  <h3 class="dark-color" style="color:  rgb(147, 5, 97);">PlanPerfect: Event Planning Website
+                  </h3>
+                  <h4 class="theme-color"></h4>
+                 <p>PlanPerfect is an event planning platform developed using Django, featuring secure user registration and authentication. Users can create and manage events, update their profiles, join events, and leave reviews on attended events. The platform also allows event sharing and integrates calendar functionality to track important dates. Additional features include managing the admin panel as an owner, sending reminders to join members, a feedback form, a dynamic slider, and statistical analysis with pie charts and line charts. Django is used for both the backend and database storage, streamlining event organization for efficient and effective planning.</p>
+                  
+              </div>
+          </div>
+          
+      </div>
+  </div>
+</section>
+<section class="about-section section3 " id="about" style=" margin: 10% 0%;">
+  <div class="container">
+      <div class="row align-items-center justify-content-around flex-row-reverse">
+        <div class="col-lg-5 text-center">
+          <div class="about-img1" style="border: 7px solid rgb(60, 255, 0);">
+              <img src="quiz.jpeg" alt="">
+          </div>
+      </div>
+          <div class="col-lg-6">
+              <div class="about-text">
+                  <h3 class="dark-color" style="color: rgb(60, 255, 0);" >Quiz App</h3>
+                  <h4 class="theme-color"></h4>
+                 <p>The Quiz App is an interactive platform developed using Android. It features an admin panel for adding different quizzes via file upload or manual inputs. Users can register securely and solve quizzes with a timer, enhancing the challenge. Upon completion, the app displays the user's score, providing immediate feedback. This app ensures a seamless and engaging user experience, promoting effective learning and self-assessment.</p>
+                  
+              </div>
+          </div>
+          
+      </div>
+  </div>
+</section>
+<!-- Service 4 - Bootstrap Brain Component -->
+<section class=" service" style="background:url(/mainbg.jpeg); background-size: cover;">
+    <div class="container-fluid">
+      <div class="row justify-content-md-center">
+        <div class="col-12 col-md-10 col-lg-8 col-xl-7">
+      
+          <h2 class="display-5  text-center" style="font-weight: bold;font-family: 'Monotype Corsiva';text-transform: uppercase;" id="service">My Services</h2>
+          <hr class="w-50 mx-auto mb-5 mb-xl-9 border-danger">
+        </div>
+      </div>
+    </div>
+  
+    <div class="container overflow-hiddenp-5">
+      <div class="row gy-4 gy-xl-0">
+        <div class="col-12 col-sm-6 col-xl-3">
+          <div class="card border-4  " style="box-shadow: 1px 1px 7px 5px rgb(207, 24, 103);" >
+            <div class="card-body text-center p-4 p-xxl-5"  style="max-height: 500;min-height: 450 ;height: 450px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="currentColor" class="bi bi-chat-text text-primary mb-4" viewBox="0 0 16 16">
+                <path d="M2.678 11.894a1 1 0 0 1 .287.801 10.97 10.97 0 0 1-.398 2c1.395-.323 2.247-.697 2.634-.893a1 1 0 0 1 .71-.074A8.06 8.06 0 0 0 8 14c3.996 0 7-2.807 7-6 0-3.192-3.004-6-7-6S1 4.808 1 8c0 1.468.617 2.83 1.678 3.894zm-.493 3.905a21.682 21.682 0 0 1-.713.129c-.2.032-.352-.176-.273-.362a9.68 9.68 0 0 0 .244-.637l.003-.01c.248-.72.45-1.548.524-2.319C.743 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.52.263-1.639.742-3.468 1.105z" />
+                <path d="M4 5.5a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zM4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8zm0 2.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5z" />
+              </svg>
+              <h4 class="mb-4">Tailored Web Experiences</h4>
+              <p class="mb-4 text-secondary">
+                <ul style="text-align: left;">
+                <li>Custom web development</li>
+                <li>Responsive and visually appealing designs</li>
+                <li>Technologies: HTML, CSS, Tailwind CSS, Bootstrap, Django</li>
+                <li>E-commerce platforms and bespoke web applications</li>
+              </ul></p>
+
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-xl-3" >
+          <div class="card border-4 " style="box-shadow: 1px 1px 7px 5px rgb(24, 76, 207);" >
+            <div class="card-body text-center p-4 p-xxl-5" style="max-height: 500;min-height: 450   ; height: 450px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="currentColor" class="bi bi-phone-flip text-primary mb-4" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M11 1H5a1 1 0 0 0-1 1v6a.5.5 0 0 1-1 0V2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v6a.5.5 0 0 1-1 0V2a1 1 0 0 0-1-1Zm1 13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-2a.5.5 0 0 0-1 0v2a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-2a.5.5 0 0 0-1 0v2ZM1.713 7.954a.5.5 0 1 0-.419-.908c-.347.16-.654.348-.882.57C.184 7.842 0 8.139 0 8.5c0 .546.408.94.823 1.201.44.278 1.043.51 1.745.696C3.978 10.773 5.898 11 8 11c.099 0 .197 0 .294-.002l-1.148 1.148a.5.5 0 0 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2a.5.5 0 1 0-.708.708l1.145 1.144L8 10c-2.04 0-3.87-.221-5.174-.569-.656-.175-1.151-.374-1.47-.575C1.012 8.639 1 8.506 1 8.5c0-.003 0-.059.112-.17.115-.112.31-.242.6-.376Zm12.993-.908a.5.5 0 0 0-.419.908c.292.134.486.264.6.377.113.11.113.166.113.169 0 .003 0 .065-.13.187-.132.122-.352.26-.677.4-.645.28-1.596.523-2.763.687a.5.5 0 0 0 .14.99c1.212-.17 2.26-.43 3.02-.758.38-.164.713-.357.96-.587.246-.229.45-.537.45-.919 0-.362-.184-.66-.412-.883-.228-.223-.535-.411-.882-.571ZM7.5 2a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1h-1Z" />
+              </svg>
+              <h4 class="mb-4"> Innovative Mobile Solutions</h4>
+              <p class="mb-4 text-secondary"><ul style="text-align: left;">
+                <li>Specialized in Android development</li>
+                <li> I Build User-friendly and robust mobile apps</li>
+                <li>Quiz app, to-do app, and custom solutions</li>
+                <li>Seamless performance and engaging user experiences</li>
+              </ul></p>
+            
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-xl-3">
+          <div class="card  "  style="box-shadow: 1px 1px 7px 5px rgb(207, 180, 24);" >
+            <div class="card-body text-center p-4 p-xxl-5" style="max-height: 500;min-height: 450   ;height: 450px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="currentColor" class="bi bi-heart-pulse text-primary mb-4" viewBox="0 0 16 16">
+                <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053.918 3.995.78 5.323 1.508 7H.43c-2.128-5.697 4.165-8.83 7.394-5.857.06.055.119.112.176.171a3.12 3.12 0 0 1 .176-.17c3.23-2.974 9.522.159 7.394 5.856h-1.078c.728-1.677.59-3.005.108-3.947C13.486.878 10.4.28 8.717 2.01L8 2.748ZM2.212 10h1.315C4.593 11.183 6.05 12.458 8 13.795c1.949-1.337 3.407-2.612 4.473-3.795h1.315c-1.265 1.566-3.14 3.25-5.788 5-2.648-1.75-4.523-3.434-5.788-5Z" />
+                <path d="M10.464 3.314a.5.5 0 0 0-.945.049L7.921 8.956 6.464 5.314a.5.5 0 0 0-.88-.091L3.732 8H.5a.5.5 0 0 0 0 1H4a.5.5 0 0 0 .416-.223l1.473-2.209 1.647 4.118a.5.5 0 0 0 .945-.049l1.598-5.593 1.457 3.642A.5.5 0 0 0 12 9h3.5a.5.5 0 0 0 0-1h-3.162l-1.874-4.686Z" />
+              </svg>
+              <h4 class="mb-4">Visually Stunning UI/UX Designs</h4>
+              <p class="mb-4 text-secondary" > 
+                <ul style="text-align: left;">
+                    <li>Expertise in Figma</li>
+                <li>Intuitive and captivating interfaces</li>
+                <li>From wireframes to final designs</li>
+                <li>Aesthetically pleasing and easy to use</li>
+                </ul>
+              </p>
+             
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-xl-3">
+          <div class="card" style="box-shadow: 1px 1px 7px 5px rgb(14, 63, 1);" >
+            <div class="card-body text-center p-4 p-xxl-5" style="max-height: 500;min-height: 450 ;height: 450px;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="currentColor" class="bi bi-mouse text-primary mb-4" viewBox="0 0 16 16">
+                <path d="M8 3a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 3zm4 8a4 4 0 0 1-8 0V5a4 4 0 1 1 8 0v6zM8 0a5 5 0 0 0-5 5v6a5 5 0 0 0 10 0V5a5 5 0 0 0-5-5z" />
+              </svg>
+              <h4 class="mb-4">Expert Freelance Development</h4>
+              <p class="mb-4 text-secondary"><ul style="text-align: left;">
+                <li>Diverse project development</li>
+                <li>Women safety app, pet management system, event planning website (PlanPerfect)</li>
+                <li>Precision and creativity in execution</li>
+                <li>Flexible and adaptable to your needs</li>
+              </ul>
+              </p>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <div class="container-fluid" style=" background-color: rgb(6, 23, 67);padding: 25px 0px;;">
+    <h3 style="text-align: center;color: yellow; text-transform: uppercase; margin: 10px;" id="skills">Skills</h3>
+    <div class="tech-container">
+
+      <div class="tech-card">
+        <img src="css.png" alt="CSS3">
+        <p>CSS3</p>
+        <div class="progress-bar">
+          <div style="width: 90%;"></div>
+        </div>
+      </div>
+     
+      <div class="tech-card">
+        <img src="html.png" alt="HTML">
+        <p>HTML</p>
+        <div class="progress-bar">
+          <div style="width: 95%;"></div>
+        </div>
+      </div>
+      
+      <div class="tech-card">
+        <img src="java.png" alt="Java">
+        <p>Java</p>
+        <div class="progress-bar">
+          <div style="width: 75%;"></div>
+        </div>
+      </div>
+      <div class="tech-card">
+        <img src="js.png" alt="JavaScript">
+        <p>JavaScript</p>
+        <div class="progress-bar">
+          <div style="width: 85%;"></div>
+        </div>
+      </div>
+      <div class="tech-card">
+        <img src="android.png" alt="Android ">
+        <p>Android(java)</p>
+        <div class="progress-bar">
+          <div style="width: 70%;"></div>
+        </div>
+      </div>
+      <div class="tech-card">
+        <img src="dj1.png" alt="jango">
+        <p>Django</p>
+        <div class="progress-bar">
+          <div style="width: 65%;"></div>
+        </div>
+      </div>
+      <div class="tech-card">
+        <img src="php.png" alt="Php">
+        <p>PHP</p>
+        <div class="progress-bar">
+          <div style="width: 70%;"></div>
+        </div>
+      </div>
+      <div class="tech-card">
+        <img src="fig2.png" alt="Figma">
+        <p>Figma</p>
+        <div class="progress-bar">
+          <div style="width: 70%;"></div>
+        </div>
+      </div>
+      <div class="tech-card">
+        <img src="python.png" alt="Python">
+        <p>Python</p>
+        <div class="progress-bar">
+          <div style="width: 90%;"></div>
+        </div>
+      </div>
+      <div class="tech-card">
+        <img src="tcss.png" alt="tailwand">
+        <p>Tailwind CSs</p>
+        <div class="progress-bar">
+          <div style="width: 80%;"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="experience">
+  <h2>Experience</h2>
+  
+  <div class="job">
+    <h3>Codesoft Internship (June 2024 - Present)</h3>
+    <p class="job-title">Web Developer Intern</p>
+    <ul>
+        <li>Created a portfolio website as part of Task 1.</li>
+        <li>Implemented UI designs using HTML, CSS, and Bootstrap, ensuring responsive and user-friendly interfaces.</li>
+        <li>Collaborated with team members to debug and enhance existing codebases.</li>
+        <li>Gained proficiency in frontend development, focusing on user experience and interface design.</li>
+    </ul>
+</div>
+
+<div class="job">
+    <h3>Codesoft Internship (June 2024 - Present)</h3>
+    <p class="job-title">App Developer Intern</p>
+    <ul>
+        <li>Created a To-Do List app with features for task management and priority setting.</li>
+        <li>Utilized Android Studio and Java for app development.</li>
+        <li>Integrated local storage for data persistence.</li>
+        <li>Tested and debugged the application to ensure functionality and user satisfaction.</li>
+    </ul>
+</div>
+  <div class="job">
+      <h3>Freelance Projects (Nov 2024 - Present)</h3>
+      <p class="job-title">Independent Developer</p>
+      <ul>
+          <li>Created custom Android applications for clients, including a Women Safety app and a Quiz app with admin panels for content management.</li>
+          <li>Utilized Django for backend development, implementing features like user authentication and data storage.</li>
+          <li>Designed intuitive user interfaces using Figma and implemented responsive designs with Tailwind CSS.</li>
+          <li>Managed project lifecycles from initial concept to deployment, ensuring client satisfaction and project success.</li>
+      </ul>
+  </div>
+</div>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+<div class="footer"  id="contact">
+	<div class="container">		
+		<div class="row text-center">						
+			<div class="col-lg-12 col-sm-12 col-xs-12">
+				<div class="footer_menu">
+					<ul>
+						<li><a href="#home">Home</a></li>
+						<li><a href="#about">About</a></li>
+            			<li><a href="#project">Projects</a></li>
+						<li><a href="#service">Service</a></li>		
+            <li><a href="#skills">Skills</a></li>						
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div>						
+				<div class="footer_copyright">
+					<p>© 2024 Neha Chandele. All Rights Reserved.</p>
+				</div>	
+				<div class="footer_profile">
+					<ul>
+					
+						<li><a href="mailto:nehachandele2211@gmail.com"><i class="fa fa-envelope"></i></a></li>
+						<li><a href="https://www.linkedin.com/in/neha-chandele"><i class="fa fa-linkedin"></i></a></li>
+					</ul>
+				</div>	
+       
+        
+          <p style="color: white;">Email: nehachandele2211@gmail.com </p>
+          <p style="color: white;">Linkedin: www.linkedin.com/in/neha-chandele</p>
+    					
+			</div><!--- END COL -->		
+     				
+		</div><!--- END ROW -->					
+	</div><!--- END CONTAINER -->
+</div>
+<br><br>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Django Developer', 'Android Developer', 'Full-Stack Developer', 'UI Designer'],
+            typeSpeed: 50,
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
